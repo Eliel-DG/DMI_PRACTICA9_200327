@@ -19,6 +19,14 @@
 
 Este proyecto representa una aplicación de muestra desarrollada en Flutter que muestra una página de inicio de la aplicación "MovieApp-200327". La página de inicio contiene los siguientes componentes principales:
 
+Este código define dos clases de widgets personalizados diseñados para ser utilizados en una aplicación Flutter. La clase MediaListItem crea un widget que muestra una imagen de fondo y un título en una tarjeta. La imagen se carga desde una URL proporcionada por un objeto Media, y la opacidad del color de fondo se ajusta para mejorar la legibilidad del título.
+
+La clase Media crea un widget que muestra una imagen cargada desde una URL también proporcionada por un objeto Media. Ambas clases son StatelessWidget, lo que significa que no cambian su estado después de la inicialización.
+
+Es importante destacar que en el código proporcionado, la clase Media contiene un error en la línea newObject(), lo cual no es una sintaxis válida. Presumiblemente, se intenta crear una instancia de Media de alguna manera válida en ese lugar.
+
+Asegúrate de que todas las dependencias estén correctamente importadas y de que los métodos getBackDropUrl() y getPosterUrl() en el objeto Media estén implementados adecuadamente para que las imágenes se carguen correctamente. Además, verifica que las imágenes y otros recursos necesarios estén disponibles en las rutas especificadas en tu proyecto de GitHub.
+
 ### `Home.dart`
 
 Este archivo contiene la clase `Home`, que representa la página de inicio de la aplicación. En el método `initState`, se llama a `_loadJson` para cargar datos de películas utilizando `HttpHandler`. También se define un estilo de fuente personalizado y se crea la estructura principal de la aplicación, que incluye una AppBar, un Drawer y un BottomNavigationBar.
